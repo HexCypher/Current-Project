@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "D:\\Current Project\\Carl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\recall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\recall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\src\\utilities\\Clipboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:src\\utilities\\Clipboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\memory\\recall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:src\\world\\unit\\player\\mind\\memory\\recall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\Clipboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\Clipboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\src\\game\\permissions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:src\\game\\permissions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\Offsets.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\Offsets.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\permissions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\permissions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\src\\world\\location\\player\\PlayerLocation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:src\\world\\location\\player\\PlayerLocation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\PlayerLocation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\PlayerLocation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\awareness\\self\\SelfAwareness.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:src\\world\\unit\\player\\mind\\awareness\\self\\SelfAwareness.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\SelfAwareness.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\SelfAwareness.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\memory\\Recall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:src\\world\\unit\\player\\mind\\memory\\Recall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|D:\\Current Project\\Carl\\include\\Recall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83EDD597-4806-4F90-BE7C-D2C0193EB66A}|Carl.vcxproj|solutionrelative:include\\Recall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "recall.h",
-              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\recall.h",
-              "RelativeDocumentMoniker": "include\\recall.h",
-              "ToolTip": "D:\\Current Project\\Carl\\include\\recall.h",
-              "RelativeToolTip": "include\\recall.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "DocumentIndex": 1,
+              "Title": "Clipboard.h",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\Clipboard.h",
+              "RelativeDocumentMoniker": "include\\Clipboard.h",
+              "ToolTip": "D:\\Current Project\\Carl\\include\\Clipboard.h",
+              "RelativeToolTip": "include\\Clipboard.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-20T04:30:06.488Z",
+              "WhenOpened": "2024-07-20T05:52:20.091Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "recall.cpp",
-              "DocumentMoniker": "D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\memory\\recall.cpp",
-              "RelativeDocumentMoniker": "src\\world\\unit\\player\\mind\\memory\\recall.cpp",
-              "ToolTip": "D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\memory\\recall.cpp",
-              "RelativeToolTip": "src\\world\\unit\\player\\mind\\memory\\recall.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Clipboard.cpp",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\src\\utilities\\Clipboard.cpp",
+              "RelativeDocumentMoniker": "src\\utilities\\Clipboard.cpp",
+              "ToolTip": "D:\\Current Project\\Carl\\src\\utilities\\Clipboard.cpp",
+              "RelativeToolTip": "src\\utilities\\Clipboard.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-20T04:29:59.449Z",
+              "WhenOpened": "2024-07-20T05:51:56.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "permissions.cpp",
-              "DocumentMoniker": "D:\\Current Project\\Carl\\src\\game\\permissions.cpp",
-              "RelativeDocumentMoniker": "src\\game\\permissions.cpp",
-              "ToolTip": "D:\\Current Project\\Carl\\src\\game\\permissions.cpp",
-              "RelativeToolTip": "src\\game\\permissions.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-20T04:29:07.504Z",
+              "Title": "Offsets.h",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\Offsets.h",
+              "RelativeDocumentMoniker": "include\\Offsets.h",
+              "ToolTip": "D:\\Current Project\\Carl\\include\\Offsets.h",
+              "RelativeToolTip": "include\\Offsets.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-20T05:36:00.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "permissions.h",
-              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\permissions.h",
-              "RelativeDocumentMoniker": "include\\permissions.h",
-              "ToolTip": "D:\\Current Project\\Carl\\include\\permissions.h",
-              "RelativeToolTip": "include\\permissions.h",
+              "Title": "PlayerLocation.cpp",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\src\\world\\location\\player\\PlayerLocation.cpp",
+              "RelativeDocumentMoniker": "src\\world\\location\\player\\PlayerLocation.cpp",
+              "ToolTip": "D:\\Current Project\\Carl\\src\\world\\location\\player\\PlayerLocation.cpp",
+              "RelativeToolTip": "src\\world\\location\\player\\PlayerLocation.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-20T05:35:19.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerLocation.h",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\PlayerLocation.h",
+              "RelativeDocumentMoniker": "include\\PlayerLocation.h",
+              "ToolTip": "D:\\Current Project\\Carl\\include\\PlayerLocation.h",
+              "RelativeToolTip": "include\\PlayerLocation.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-20T05:35:13.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SelfAwareness.h",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\SelfAwareness.h",
+              "RelativeDocumentMoniker": "include\\SelfAwareness.h",
+              "ToolTip": "D:\\Current Project\\Carl\\include\\SelfAwareness.h",
+              "RelativeToolTip": "include\\SelfAwareness.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-20T04:27:20.359Z",
+              "WhenOpened": "2024-07-20T05:34:49.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelfAwareness.cpp",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\awareness\\self\\SelfAwareness.cpp",
+              "RelativeDocumentMoniker": "src\\world\\unit\\player\\mind\\awareness\\self\\SelfAwareness.cpp",
+              "ToolTip": "D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\awareness\\self\\SelfAwareness.cpp",
+              "RelativeToolTip": "src\\world\\unit\\player\\mind\\awareness\\self\\SelfAwareness.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-20T05:34:44.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\Current Project\\Carl\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\Current Project\\Carl\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "D:\\Current Project\\Carl\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-20T00:56:46.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Recall.cpp",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\memory\\Recall.cpp",
+              "RelativeDocumentMoniker": "src\\world\\unit\\player\\mind\\memory\\Recall.cpp",
+              "ToolTip": "D:\\Current Project\\Carl\\src\\world\\unit\\player\\mind\\memory\\Recall.cpp",
+              "RelativeToolTip": "src\\world\\unit\\player\\mind\\memory\\Recall.cpp",
+              "ViewState": "AQIAACcAAAAAAAAAAAAcwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-20T05:26:51.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Recall.h",
+              "DocumentMoniker": "D:\\Current Project\\Carl\\include\\Recall.h",
+              "RelativeDocumentMoniker": "include\\Recall.h",
+              "ToolTip": "D:\\Current Project\\Carl\\include\\Recall.h",
+              "RelativeToolTip": "include\\Recall.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-20T05:29:49.713Z",
               "EditorCaption": ""
             }
           ]

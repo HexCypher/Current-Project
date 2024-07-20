@@ -93,21 +93,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\permissions.cpp">
+    <ClCompile Include="src\game\Permissions.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClCompile Include="src\world\unit\player\mind\memory\recall.cpp">
+    <ClCompile Include="src\world\unit\player\mind\memory\Recall.cpp">
       <Filter>src\world\unit\player\mind\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\unit\player\mind\awareness\self\SelfAwareness.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\location\player\PlayerLocation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilities\Clipboard.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\permissions.h">
+    <ClInclude Include="include\Permissions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\recall.h">
+    <ClInclude Include="include\Recall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SelfAwareness.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PlayerLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Clipboard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
