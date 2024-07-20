@@ -2,13 +2,15 @@
 #ifndef OFFSETS_H
 #define OFFSETS_H
 
-// Example offsets, replace with actual values
+#include <vector>
+
 namespace Offsets {
-    const uintptr_t playerBase = 0x00C7BCD4;
-    const uintptr_t playerX = 0x87B544;
-    const uintptr_t playerY = 0x87B548;
-    const uintptr_t playerZ = 0x87B54C;
-    std::vector<unsigned int> combatFlag = { 0x88, 0x28, 0x8, 0xBA };
+    extern const std::vector<unsigned int> combatFlagOffsets;
+    const uintptr_t CombatFlag = 0x00C7BCD4; // Example base address, replace with actual base address
+    const uintptr_t PlayerX = 0x87B544;
+    const uintptr_t PlayerY = 0x87B548;
+    const uintptr_t PlayerZ = 0x87B54C;
+    // Add other offsets here
 }
 
 #endif // OFFSETS_H

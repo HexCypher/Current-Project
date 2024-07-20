@@ -7,30 +7,50 @@
 #include "Offsets.h"
 
 int main() {
+    const wchar_t* procName = L"WoW.exe";
+    DWORD procID;
+    HANDLE handle;
+    uintptr_t moduleBase;
+    uintptr_t combatFlagAddr;
+    byte combatFlag;
+
+    uintptr_t playerBaseAddr = 0x00C7BCD4;
+
     if (!Permissions::EnableDebugPrivilege()) {
         std::cerr << "Failed to enable debug privileges" << std::endl;
         return 1;
     }
 
-    Recall recall(L"WoW.exe");
+    procID = Recall::GetProcId(procName);
+    handle = Recall::GetHandle(procName);
+    moduleBase = Recall::GetModuleBaseAddress(procID, procName);
 
-    HANDLE handle = recall.GetHandle();
-    if (handle == NULL) {
-        std::cerr << "Failed to open process for reading" << std::endl;
-        return 1;
+    combatFlagAddr = Recall::FindDMAaddress(handle, playerBaseAddr, Offsets::combatFlagOffsets);
+    if (combatFlagAddr != 0) {
+        uintptr_t finalValue;
+        if (ReadProcessMemory(handle, (LPCVOID)combatFlagAddr, &finalValue, sizeof(finalValue), nullptr)) {
+            // std::cout << "Final address: " << std::hex << combatFlagAddr << " Value at final address: " << std::hex << finalValue << " InfoPanel->combatFlagAddr" << std::endl;
+        }
+        else {
+            std::cerr << "Failed to read value at final address (Error Code: " << GetLastError() << ")" << std::endl;
+        }
+    }
+    else {
+        std::cerr << "Failed to find final address." << std::endl;
     }
 
-    // Example: reading the combat flag
-    byte combatFlag = SelfAwareness::GetCombatFlag(handle, Offsets::CombatFlag);
+    combatFlag = SelfAwareness::GetCombatFlag(handle, combatFlagAddr);
     std::cout << "Combat Flag: " << static_cast<int>(combatFlag) << std::endl;
 
     // Example: reading XYZ coordinates
-    uintptr_t moduleBase = recall.GetModuleBaseAddress(L"WoW.exe"); // Example base address, replace with actual base address
     float x = PlayerLocation::getX(moduleBase, handle);
     float y = PlayerLocation::getY(moduleBase, handle);
     float z = PlayerLocation::getZ(moduleBase, handle);
 
     std::cout << "Player Coordinates: (" << x << ", " << y << ", " << z << ")" << std::endl;
+
+    // Clean up
+    CloseHandle(handle);
 
     return 0;
 }

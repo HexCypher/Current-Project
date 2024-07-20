@@ -111,6 +111,9 @@
     <ClCompile Include="src\utilities\Clipboard.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\Offsets.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Permissions.h">

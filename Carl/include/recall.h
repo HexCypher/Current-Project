@@ -10,10 +10,10 @@ class Recall {
 public:
     Recall(const std::wstring& processName);
     ~Recall();
-    HANDLE GetHandle();
-    DWORD GetProcId();
-    uintptr_t GetModuleBaseAddress(const std::wstring& moduleName);
-    uintptr_t FindDMAaddress(uintptr_t baseAddr, const std::vector<unsigned int>& offsets);
+    static HANDLE GetHandle(const wchar_t* procName);
+    static DWORD GetProcId(const wchar_t* procName);
+    static uintptr_t GetModuleBaseAddress(DWORD procId, const wchar_t* procName);
+    static uintptr_t FindDMAaddress(HANDLE hProc, uintptr_t baseAddr, const std::vector<unsigned int>& offsets);
 
     bool ReadMemory(LPCVOID lpBaseAddress, LPVOID lpBuffer, SIZE_T nSize);
     template<typename T>

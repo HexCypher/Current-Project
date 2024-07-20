@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="src\game\Offsets.cpp" />
     <ClCompile Include="src\game\Permissions.cpp" />
     <ClCompile Include="src\utilities\Clipboard.cpp" />
     <ClCompile Include="src\world\location\player\PlayerLocation.cpp" />

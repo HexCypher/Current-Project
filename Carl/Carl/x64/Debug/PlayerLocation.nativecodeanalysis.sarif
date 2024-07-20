@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33812.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/current project/carl/src/world/location/player/playerlocation.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "97b084ac429fb8368f23e04cc3340ca89ad9b5af6a7687c798ba5761fea443c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/current project/carl/include/playerlocation.h"
+          },
+          "hashes": {
+            "sha-256": "0cde164b7cb824c7e01055f16b533bf647fca3fdb328a4042e91e58af117af16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/current project/carl/include/offsets.h"
+          },
+          "hashes": {
+            "sha-256": "02781fb93690369b4702223bd5c206b9bbc0b886182ffb891b9df20ef78c213a"
+          }
+        }
+      ]
+    }
+  ]
+}
