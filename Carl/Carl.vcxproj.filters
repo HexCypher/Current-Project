@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
@@ -13,10 +9,106 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\world">
+      <UniqueIdentifier>{4d787de5-1db1-494c-8c3b-6afb25279aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\location">
+      <UniqueIdentifier>{b5417b81-3048-46aa-b21f-0bf03372cf2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\location\continent">
+      <UniqueIdentifier>{3d0d23ad-7301-4ef8-858f-97be874e2774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit">
+      <UniqueIdentifier>{64ac0826-b6c6-4a49-a5e0-ce2e47c02376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player">
+      <UniqueIdentifier>{f004bce8-520f-457c-abfc-ad63e907e231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\mind">
+      <UniqueIdentifier>{5085c708-d89f-49c9-9d6c-b48a45b857dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\mind\awareness">
+      <UniqueIdentifier>{8dc89d56-1ee7-4534-ac3b-70085e8fab35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\mind\identity">
+      <UniqueIdentifier>{973d54fa-a226-4a87-a30f-56ad712a0176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\mind\intellect">
+      <UniqueIdentifier>{47e03774-4cb4-40e3-9c2b-6eda8092cf9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\mind\memory">
+      <UniqueIdentifier>{439fbf8c-24a0-4dc3-82c1-d29415ad0eba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body">
+      <UniqueIdentifier>{e6ddd35d-4184-4337-8d38-2c1e3c606bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\eyes">
+      <UniqueIdentifier>{8d48c27b-41d7-4e1f-a3a0-d0abf007a0dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\ears">
+      <UniqueIdentifier>{7b61b4ef-ddf5-4402-be56-cfd1368affc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\mouth">
+      <UniqueIdentifier>{9cc9a126-88e6-4c6b-86c5-76bcb228cf62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\hands">
+      <UniqueIdentifier>{0ec7ebca-b754-4699-bb7a-14298d5d55ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\feet">
+      <UniqueIdentifier>{4e41028f-bb3d-4c7c-867d-cf49f5ca5786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\heart">
+      <UniqueIdentifier>{94d12d98-1876-4f48-a844-92d165fc8c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\body\liver">
+      <UniqueIdentifier>{23136cff-21ef-49b7-bdca-84991239939b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\soul">
+      <UniqueIdentifier>{417152f6-2d7a-4ab6-9ff7-131ad038150b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\soul\conscience">
+      <UniqueIdentifier>{7ca2f0ea-82ba-4c45-96be-7b292ec35daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\soul\objectives">
+      <UniqueIdentifier>{00c06903-d3c7-4d7b-a1f6-c4b2ad400c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\non-player">
+      <UniqueIdentifier>{4c983591-426a-44ca-9add-1a5e68af067a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\non-player\npc">
+      <UniqueIdentifier>{e0f481d7-b0ec-47ea-86c6-9bc03efdaf85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\non-player\object">
+      <UniqueIdentifier>{d53c4867-4b88-4536-adc3-34008d25c57a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world\unit\player\soul\temperament">
+      <UniqueIdentifier>{0ec3118a-4250-4ce0-8a9c-fb2479abe498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{8b2e9bf5-7daf-4f75-8cc3-5d6513480a52}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\permissions.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\unit\player\mind\memory\recall.cpp">
+      <Filter>src\world\unit\player\mind\memory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\permissions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\recall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
