@@ -3,5 +3,7 @@ D:\Current Project\Carl\src\game\Offsets.cpp;D:\Current Project\Carl\Carl\x64\De
 D:\Current Project\Carl\src\game\Permissions.cpp;D:\Current Project\Carl\Carl\x64\Debug\Permissions.obj
 D:\Current Project\Carl\src\utilities\Clipboard.cpp;D:\Current Project\Carl\Carl\x64\Debug\Clipboard.obj
 D:\Current Project\Carl\src\world\location\player\PlayerLocation.cpp;D:\Current Project\Carl\Carl\x64\Debug\PlayerLocation.obj
+D:\Current Project\Carl\src\world\unit\non-player\CurrentTarget.cpp;D:\Current Project\Carl\Carl\x64\Debug\CurrentTarget.obj
+D:\Current Project\Carl\src\world\unit\player\mind\awareness\Awareness.cpp;D:\Current Project\Carl\Carl\x64\Debug\Awareness.obj
 D:\Current Project\Carl\src\world\unit\player\mind\awareness\self\SelfAwareness.cpp;D:\Current Project\Carl\Carl\x64\Debug\SelfAwareness.obj
 D:\Current Project\Carl\src\world\unit\player\mind\memory\Recall.cpp;D:\Current Project\Carl\Carl\x64\Debug\Recall.obj

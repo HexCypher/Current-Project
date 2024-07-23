@@ -3,6 +3,7 @@
 #include "Permissions.h"
 #include "Recall.h"
 #include "PlayerLocation.h"
+#include "Awareness.h"
 #include "SelfAwareness.h"
 #include "Offsets.h"
 
@@ -42,12 +43,18 @@ int main() {
     combatFlag = SelfAwareness::GetCombatFlag(handle, combatFlagAddr);
     std::cout << "Combat Flag: " << static_cast<int>(combatFlag) << std::endl;
 
-    // Example: reading XYZ coordinates
+    // Reading player XYZ coordinates
     float x = PlayerLocation::getX(moduleBase, handle);
     float y = PlayerLocation::getY(moduleBase, handle);
     float z = PlayerLocation::getZ(moduleBase, handle);
 
     std::cout << "Player Coordinates: (" << x << ", " << y << ", " << z << ")" << std::endl;
+
+    // Reading target guid
+    uintptr_t targetGuid = Awareness::GetTargetGuid(handle, Offsets::currentTarget);
+
+    std::cout << "Target GUID: " << std::hex << targetGuid << std::endl;
+
 
     // Clean up
     CloseHandle(handle);
