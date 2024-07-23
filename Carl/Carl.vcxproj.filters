@@ -114,9 +114,6 @@
     <ClCompile Include="src\game\Offsets.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\world\unit\player\mind\memory\EntityListParser.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Permissions.h">
@@ -135,9 +132,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Clipboard.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\EntityListParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
