@@ -1,4 +1,5 @@
-// Offsets.h
+// Offsets.h .003
+
 #ifndef OFFSETS_H
 #define OFFSETS_H
 
@@ -11,6 +12,7 @@ namespace Offsets {
     const uintptr_t PlayerX = 0x87B544;
     const uintptr_t PlayerY = 0x87B548;
     const uintptr_t PlayerZ = 0x87B54C;
+    const uintptr_t playerBaseAddr = 0x00C7BCD4; // Added playerBaseAddr
     // Add other offsets here
 }
 

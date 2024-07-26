@@ -1,4 +1,5 @@
-// Main.cpp
+// main.cpp .010
+
 #include <iostream>
 #include "Permissions.h"
 #include "Recall.h"
@@ -15,18 +16,19 @@ int main() {
     uintptr_t combatFlagAddr;
     byte combatFlag;
 
-    uintptr_t playerBaseAddr = 0x00C7BCD4;
-
+    // Enable debug privileges for the process
     if (!Permissions::EnableDebugPrivilege()) {
         std::cerr << "Failed to enable debug privileges" << std::endl;
         return 1;
     }
 
+    // Get the process ID and handle
     procID = Recall::GetProcId(procName);
     handle = Recall::GetHandle(procName);
     moduleBase = Recall::GetModuleBaseAddress(procID, procName);
 
-    combatFlagAddr = Recall::FindDMAaddress(handle, playerBaseAddr, Offsets::combatFlagOffsets);
+    // Find the combat flag address
+    combatFlagAddr = Recall::FindDMAaddress(handle, Offsets::playerBaseAddr, Offsets::combatFlagOffsets);
     if (combatFlagAddr != 0) {
         uintptr_t finalValue;
         if (ReadProcessMemory(handle, (LPCVOID)combatFlagAddr, &finalValue, sizeof(finalValue), nullptr)) {
@@ -40,21 +42,42 @@ int main() {
         std::cerr << "Failed to find final address." << std::endl;
     }
 
+    // Get the combat flag
     combatFlag = SelfAwareness::GetCombatFlag(handle, combatFlagAddr);
     std::cout << "Combat Flag: " << static_cast<int>(combatFlag) << std::endl;
 
-    // Reading player XYZ coordinates
+    // Read player XYZ coordinates
     float x = PlayerLocation::getX(moduleBase, handle);
     float y = PlayerLocation::getY(moduleBase, handle);
     float z = PlayerLocation::getZ(moduleBase, handle);
-
     std::cout << "Player Coordinates: (" << x << ", " << y << ", " << z << ")" << std::endl;
 
-    // Reading target guid
-    uintptr_t targetGuid = Awareness::GetTargetGuid(handle, Offsets::currentTarget);
+    // Use pointer path to get the target information
+    uintptr_t baseAddr = moduleBase + 0x0074B2BC; // Base address from module base
+    DWORD firstPointerAddr = 0;
 
-    std::cout << "Target GUID: " << std::hex << targetGuid << std::endl;
+    // Resolve the first pointer
+    if (!ReadProcessMemory(handle, (LPCVOID)baseAddr, &firstPointerAddr, sizeof(DWORD), nullptr)) {
+        std::cerr << "Failed to read first pointer at base address: " << std::hex << baseAddr << std::dec << " (Error Code: " << GetLastError() << ")" << std::endl;
+        CloseHandle(handle);
+        return 1;
+    }
 
+    // Calculate the target info base address
+    DWORD targetInfoBaseAddr = firstPointerAddr + 0x358; // Add the offset
+
+    // Variables to store target information
+    uint32_t targetGuid;
+    float targetX, targetY, targetZ;
+
+    // Get the target information
+    if (Awareness::GetTargetInfo(handle, targetInfoBaseAddr, targetGuid, targetX, targetY, targetZ)) {
+        std::cout << "Target GUID: " << std::hex << targetGuid << std::dec << std::endl;
+        std::cout << "Target Coordinates: (" << targetX << ", " << targetY << ", " << targetZ << ")" << std::endl;
+    }
+    else {
+        std::cout << "Failed to get target information." << std::endl;
+    }
 
     // Clean up
     CloseHandle(handle);
