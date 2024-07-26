@@ -133,11 +133,15 @@
     <ClCompile Include="src\game\Permissions.cpp" />
     <ClCompile Include="src\utilities\Clipboard.cpp" />
     <ClCompile Include="src\world\location\player\PlayerLocation.cpp" />
+    <ClCompile Include="src\world\unit\non-player\CurrentTarget.cpp" />
+    <ClCompile Include="src\world\unit\player\mind\awareness\Awareness.cpp" />
     <ClCompile Include="src\world\unit\player\mind\awareness\self\SelfAwareness.cpp" />
     <ClCompile Include="src\world\unit\player\mind\memory\Recall.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Awareness.h" />
     <ClInclude Include="include\Clipboard.h" />
+    <ClInclude Include="include\CurrentTarget.h" />
     <ClInclude Include="include\Offsets.h" />
     <ClInclude Include="include\SelfAwareness.h" />
     <ClInclude Include="include\Permissions.h" />
