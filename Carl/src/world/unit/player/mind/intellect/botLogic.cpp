@@ -11,7 +11,6 @@
 
 extern bool botActive;
 
-// Function to perform the bot's main logic
 void botLogic() {
     const wchar_t* procName = L"WoW.exe";
     DWORD procID;
@@ -20,17 +19,15 @@ void botLogic() {
     uintptr_t combatFlagAddr;
     byte combatFlag;
 
-    // Get the process ID and handle
     procID = Recall::GetProcId(procName);
     handle = Recall::GetHandle(procName);
     moduleBase = Recall::GetModuleBaseAddress(procID, procName);
 
-    // Find the combat flag address
     combatFlagAddr = Recall::FindDMAaddress(handle, Offsets::playerBaseAddr, Offsets::combatFlagOffsets);
     if (combatFlagAddr != 0) {
         uintptr_t finalValue;
         if (ReadProcessMemory(handle, (LPCVOID)combatFlagAddr, &finalValue, sizeof(finalValue), nullptr)) {
-            // std::cout << "Final address: " << std::hex << combatFlagAddr << " Value at final address: " << std::hex << finalValue << " InfoPanel->combatFlagAddr" << std::endl;
+            // Successfully read
         }
         else {
             std::cerr << "Failed to read value at final address (Error Code: " << GetLastError() << ")" << std::endl;
@@ -40,52 +37,45 @@ void botLogic() {
         std::cerr << "Failed to find final address." << std::endl;
     }
 
-    // Get the combat flag
     combatFlag = SelfAwareness::GetCombatFlag(handle, combatFlagAddr);
     std::cout << "Combat Flag: " << static_cast<int>(combatFlag) << std::endl;
 
-    // Read player XYZ coordinates
     float charX = PlayerLocation::getX(moduleBase, handle);
     float charY = PlayerLocation::getY(moduleBase, handle);
     float charZ = PlayerLocation::getZ(moduleBase, handle);
     std::cout << "Player Coordinates: (" << charX << ", " << charY << ", " << charZ << ")" << std::endl;
 
-    // Use pointer path to get the target information
-    uintptr_t baseAddr = moduleBase + 0x0074B2BC; // Base address from module base
+    uintptr_t baseAddr = moduleBase + 0x0074B2BC;
     DWORD firstPointerAddr = 0;
 
-    // Resolve the first pointer
     if (!ReadProcessMemory(handle, (LPCVOID)baseAddr, &firstPointerAddr, sizeof(DWORD), nullptr)) {
         std::cerr << "Failed to read first pointer at base address: " << std::hex << baseAddr << std::dec << " (Error Code: " << GetLastError() << ")" << std::endl;
         CloseHandle(handle);
         return;
     }
 
-    // Calculate the target info base address
-    DWORD targetInfoBaseAddr = firstPointerAddr + 0x358; // Add the offset
+    DWORD targetInfoBaseAddr = firstPointerAddr + 0x358;
 
-    // Variables to store target information
     uint32_t targetGuid;
     float targetX, targetY, targetZ;
 
-    // Get the target information
     if (Awareness::GetTargetInfo(handle, targetInfoBaseAddr, targetGuid, targetX, targetY, targetZ)) {
         std::cout << "Target GUID: " << std::hex << targetGuid << std::dec << std::endl;
         std::cout << "Target Coordinates: (" << targetX << ", " << targetY << ", " << targetZ << ")" << std::endl;
 
-        // Check if the character is facing the target
         float charFacing = PlayerLocation::getFacing(moduleBase, handle);
         float targetFacing = calculateAngle(charX, charY, targetX, targetY);
 
         if (!isFacingTarget(charX, charY, charFacing, targetX, targetY)) {
             turnCharacter(charFacing, targetFacing);
-            std::cout << "Adjusted facing direction to target." << std::endl;
+        }
+        else {
+            std::cout << "Facing target" << std::endl;
         }
     }
     else {
         std::cout << "Failed to get target information." << std::endl;
     }
 
-    // Clean up
     CloseHandle(handle);
 }

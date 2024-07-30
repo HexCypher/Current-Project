@@ -16,12 +16,6 @@ int main() {
         return 1;
     }
 
-    // Initialize DirectInput
-    if (!initializeDirectInput(hInstance)) {
-        std::cerr << "Failed to initialize DirectInput" << std::endl;
-        return 1;
-    }
-
     // Set console window properties
     setConsoleWindowProperties();
 
@@ -44,17 +38,6 @@ int main() {
 
     // Unregister hotkey before exiting
     UnregisterHotKey(nullptr, 1);
-
-    // Release DirectInput resources
-    if (dKeyboard) {
-        dKeyboard->Unacquire();
-        dKeyboard->Release();
-        dKeyboard = nullptr;
-    }
-    if (dInput) {
-        dInput->Release();
-        dInput = nullptr;
-    }
 
     return 0;
 }
