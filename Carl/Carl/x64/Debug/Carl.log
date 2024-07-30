@@ -1,8 +1,3 @@
-﻿  Main.cpp
-  Awareness.cpp
-D:\Current Project\Carl\src\world\unit\player\mind\awareness\Awareness.cpp(36,40): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCVOID' of greater size
-D:\Current Project\Carl\src\world\unit\player\mind\awareness\Awareness.cpp(45,40): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCVOID' of greater size
-D:\Current Project\Carl\src\world\unit\player\mind\awareness\Awareness.cpp(46,40): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCVOID' of greater size
-D:\Current Project\Carl\src\world\unit\player\mind\awareness\Awareness.cpp(47,40): warning C4312: 'type cast': conversion from 'DWORD' to 'LPCVOID' of greater size
-  Generating Code...
+﻿  initialization.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Carl.vcxproj -> D:\Current Project\Carl\x64\Debug\Carl.exe
